@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="mb-3">
+            <label for="txtLogin" class="form-label">Seu login</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.login" id="txtLogin" aria-describedby="emailHelp">
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3">
+            <label for="txtSenha" class="form-label">Sua senha</label>
+            <input type="password" [(ngModel)]="usuario.senha" class="form-control" id="txtSenha">
+        </div>
+    </div>
+    <button type="submit" (click)="efetivarLogin()" class="btn btn-primary">Enviar dados</button>
+
+</div>
